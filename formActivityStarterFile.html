@@ -3,10 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Hannah Kaminsky">
-<!---------- TO-DO: ADD META TAG AND NAME HERE ---------->
 	<title>Form Activity Solution File</title>
-	<link href="styles.css">
-<!---------- TO-DO: ADD LINK TO CSS HERE ---------->
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 	<a href="#main-content" id="skipLink">Skip to main content</a>
@@ -27,30 +25,86 @@
 		<article>
 			<h2>Coding Semantic and Accessible Forms!</h2>
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
-			<form method="POST">
-				<label>Full Name</label>
+			<form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+				<label for="myName">Full Name*</label>
 				<input>
 
-				<label>Email</label>
+				<label for="myEmail">Email*</label>
 				<input>
 
-				<label>Phone</label>
+				<label for="myPhone">Phone*</label>
 				<input>
 
 				<fieldset>
-					<legend>Preferred Contact Method</legend>
+					<legend>Preferred Contact Method*</legend>
 
 					<input>
-					<label>Phone</label>
+					<label for="prefPhone">Phone</label>
 
 					<input>
-					<label>Email</label>
+					<label for="prefEmail">Email</label>
 				</fieldset>
 
-				<label>Message</label>
+				<label for="states">Choose a State</label>
+				<select name="states">
+					<option value="AL">Alabama AL</option>
+					<option value="AK">Alaska AK</option>
+					<option value="AZ">Arizona AZ</option>
+					<option value="AR">Arkansas AR</option>
+					<option value="CA">California CA</option>
+					<option value="CO">Colorado CO</option>
+					<option value="CT">Connecticut CT</option>
+					<option value="DE">Delaware DE</option>
+					<option value="DC">District Of Columbia DC</option>
+					<option value="FL">Florida FL</option>
+					<option value="GA">Georgia GA</option>
+					<option value="HI">Hawaii HI</option>
+					<option value="ID">Idaho ID</option>
+					<option value="IL">Illinois IL</option>
+					<option value="IN">Indiana IN</option>
+					<option value="IA">Iowa IA</option>
+					<option value="KS">Kansas KS</option>
+					<option value="KY">Kentucky KY</option>
+					<option value="LA">Louisiana LA</option>
+					<option value="ME">Maine ME</option>
+					<option value="MD">Maryland MD</option>
+					<option value="MA">Massachusetts MA</option>
+					<option value="MI">Michigan MI</option>
+					<option value="MN">Minnesota MN</option>
+					<option value="MS">Mississippi MS</option>
+					<option value="MO">Missouri MO</option>
+					<option value="MT">Montana MT</option>
+					<option value="NE">Nebraska NE</option>
+					<option value="NV">Nevada NV</option>
+					<option value="NH">New Hampshire NH</option>
+					<option value="NJ">New Jersey NJ</option>
+					<option value="NM">New Mexico NM</option>
+					<option value="NY">New York NY</option>
+					<option value="NC">North Carolina NC</option>
+					<option value="ND">North Dakota ND</option>
+					<option value="OH">Ohio OH</option>
+					<option value="OK">Oklahoma OK</option>
+					<option value="OR">Oregon OR</option>
+					<option value="PA">Pennsylvania PA</option>
+					<option value="RI">Rhode Island RI</option>
+					<option value="SC">South Carolina SC</option>
+					<option value="SD">South Dakota SD</option>
+					<option value="TN">Tennessee TN</option>
+					<option value="TX">Texas TX</option>
+					<option value="UT">Utah UT</option>
+					<option value="VT">Vermont VT</option>
+					<option value="VA">Virginia VA</option>
+					<option value="WA">Washington WA</option>
+					<option value="WV">West Virginia WV</option>
+					<option value="WI">Wisconsin WI</option>
+					<option value="WY">Wyoming WY</option>
+				</select>
+
+				<label for="message">Message</label>
 				<textarea></textarea>
+
+				<input type="submit" name="mySubmit" id="mySubmit">
 			</form>
-<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
 		</article>
 	</main>
 	<footer>
